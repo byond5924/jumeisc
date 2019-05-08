@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <title>三优儿童教育</title>
+    <style>
+        .head {
+            background: #0ab068;
+            height: 23px;
+            width: 100%;
+        }
+        a:hover{
+        text-decoration:none;
+        }
+        .nav_title {
+            float: right;
+
+        }
+
+        .nav_left {
+            width: 116px;
+            height: 23px;
+            float: left;
+            margin-top: 2px;
+            background: white;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+
+        }
+
+        .nav_title>li {
+            float: left;
+            margin-top: 2px;
+        }
+
+        .nav_title>li>a {
+
+            padding-left: 20px;
+
+            color: white;
+        }
+
+        .nav_title>li>a:hover {
+            color: #ffcd00;
+            text-decoration: none;
+        }
+
+        .heads {
+            height: 104px;
+            border-bottom: 1px solid #0ab068;
+        }
+
+        /* .logo{
+        height: 70px;
+        display:
+    }
+    img{
+		display:block;
+        } */
+        .heads_title>li {
+            float: left;
+            margin-left: 25px;
+        }
+
+        .heads_title>li>a {
+            font-size: 20px;
+            line-height: 100px;
+        }
+
+        .heads_title>li>a:hover {
+            color: #0ab068;
+        }
+
+        .heads_title>li:hover {
+            color: #0ab068;
+            border-bottom: 3px solid #0ab068;
+        }
+
+        .nav-top1 {
+            margin-top: 25px;
+        }
+
+        .nav-right {
+            width: 290px;
+            height: 34px;
+            border: 1px solid #0ab068;
+            margin-top: 10px;
+        }
+
+        .nav-text {
+            width: 233px;
+            height: 31px;
+            float: left;
+            color: #9c9c9c;
+            padding-left: 20px;
+            border: none;
+
+        }
+
+        .nav-submit {
+            width: 55px;
+            height: 32px;
+            /*background:url(../images/search.jpg) no-repeat left center;*/
+            background: #0ab068;
+            float: right;
+            border: none;
+            font-size: 14px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .body_left {
+            
+            width: 850px;
+        }
+        .banner img{
+            width: 850px;
+            height: 330px;
+        }
+        .banner {
+            position: relative;
+            width: 850px;
+            height: 335px;
+            /* margin: 50px auto; */
+            /* background: grey; */
+            overflow: hidden;
+            top: 25px;
+        }
+
+        .img-list {
+            list-style: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 8240px;
+            height: 335px;
+        }
+
+        .img-list li {
+            float: left;
+        }
+
+        .banner-nav-list {
+            list-style: none;
+            position: absolute;
+            right: 40%;
+            bottom: 30px;
+        }
+
+        .banner-nav-list li {
+            background: white;
+            float: left;
+            width: 30px;
+            height: 4px;
+            border-radius: 2px;
+            margin-right: 10px;
+            cursor: pointer;
+            text-align: center;
+            opacity: 0.5;
+        }
+
+        .banner-nav-list li.active {
+            background: #545454;
+        }
+
+        .banner .toLeft {
+            width: 60px;
+            height: 60px;
+            background: url(../images/banner/btn.gif);
+            position: absolute;
+            left: 30px;
+            top: 120px;
+            /*opacity: 0;*/
+        }
+
+        .banner .toRight {
+            width: 60px;
+            height: 60px;
+            background: url(../images/banner/btn.gif) 0px 60px;
+            position: absolute;
+            right: 30px;
+            top: 120px;
+            /*opacity: 0;*/
+        }
+
+        #arr {
+            opacity: 0;
+        }
+        .main_title_le {
+            margin:  60px 0 30px 0;
+            width: 850px;
+            height: 200px;
+        }
+        .main_title_le img{
+            height: 200px;
+        }
+        .main_title_le1{
+            float: left;
+        }
+        .main_title_le a:nth-child(1){
+            float: left;
+            padding-right: 30px;
+            font-size: 14px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="container">
+            <div class="nav_left"><a href="#">地址</a></div>
+            <ol class="nav_title">
+                <li><a href="#">商家入驻</a></li>
+                <li><a href="./login.html">登入</a></li>
+                <li><a href="#">注册</a></li>
+            </ol>
+        </div>
+        <div class=" heads">
+            <div class="container">
+                <span class="left logo"><a href="#"><img src="../images/logo/logo.jpg" alt=""></a></span>
+                <ul class="heads_title">
+                    <li><a href="javascript:;">妈妈MF</a></li>
+                    <li><a href="#">育儿大师</a></li>
+                    <li><a href="#">免费试用</a></li>
+                    <li><a href="#">测试小屋</a></li>
+                    <li><a href="#">妈妈悦读</a></li>
+                    <li><a href="#">幼儿保育</a></li>
+                </ul>
+                <div class="nav-top1 right">
+                    <form class="nav-right" method="pdst" action="#">
+                        <input type="text" class="nav-text" value="今日精选" />
+                        <input type="submit" class="nav-submit" value="搜索" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bodys">
+        <div class="body_left">
+            <div class="banner">
+                <div class="banner" id="banner">
+                    <ul class="img-list" id="img-list">
+                        <li index="0"><a href="#"><img src="../images/banner/banner (1).jpg"></a></li>
+                        <li index="1"><a href="#"><img src="../images/banner/banner (2).jpg"></a></li>
+                        <li index="2"><a href="#"><img src="../images/banner/banner (3).jpg"></a></li>
+                        <li index="3"><a href="#"><img src="../images/banner/banner (5).jpg"></a></li>
+                        <li index="4"><a href="#"><img src="../images/banner/banner (6).jpg"></a></li>
+                        <li index="5"><a href="#"><img src="../images/banner/banner (7).jpg"></a></li>
+                        <li index="0"><a href="#"><img src="../images/banner/banner (1).jpg"></a></li>
+                        
+
+                    </ul>
+
+                    <ul class="banner-nav-list" id="banner-nav-list">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div id="arr">
+                        <div class="toLeft" id="toLeft"></div>
+                        <div class="toRight" id="toRight"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="main_title_le">
+            <a href="#"><img src="../images/title/636827156773894028.jpg" alt=""></a>
+            <div class="main_title_le1">
+                <ul>
+                    <li><a href="">春雨润万物，师德育未来--唐尼翰博国际保育园2019年优秀教师颁奖活动</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="body_right"></div>
+        
+    </div>
+    
+</body>
+<script src="../js/jqeury_ban.js"></script>
+</html>

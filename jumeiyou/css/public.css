@@ -1,0 +1,43 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { 
+	margin:0; padding:0;
+	 }
+	 ul,ol {
+	 	 list-style:none; 
+	 	 } 
+body { 
+	 color:#333;
+	 font:12px/20px "SimSun","宋体","Arial Narrow",HELVETICA; background:#fff;
+	overflow-y:scroll;overflow-x:hidden;
+	 }
+	 img{
+		display:block;
+		}
+	.left{
+		float: left;
+	}
+	.right{
+		float: right;
+	}
+ a { 
+ 	color:#666; 
+	 text-decoration:none;
+	  }
+ 	i,em{
+ 		font-style:normal;
+ 	}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clearfix:after{
+content:"";
+display:block;
+visibility:hidden;
+clear:both;
+height:0;
+}
+.clearfix{ /* 为了照顾ie6浏览器*/
+zoom:1;
+}
