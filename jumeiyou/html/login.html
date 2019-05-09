@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
     <title>聚美优品</title>
     <style>
 
@@ -34,38 +35,77 @@
                 <div class="loginBord">
                     <div class="loginTit">
                         <h1><strong>登录聚美</strong></h1>
-                        <div class="tosignup ">还没有聚美帐号？<a href="#">30秒注册</a></div>
+                        <div class="tosignup ">还没有聚美帐号？<a href="./register.html">30秒注册</a></div>
                     </div>
-                    <div class="radio_wrapper" style="display: block;">
-                        <span>
+                    <div class="radio_wrapper">
+                        <span id="switch1">
                             <input name="method" type="radio" rel="login-dynamic-form" value="dynamic"
                                 id="radio_dynamic">
                             <label for="radio_dynamic">
-                                手机动态密码登录
+                                动态密码登录
                             </label>
                         </span>
-                        <span>
+                        <span id="switch2">
                             <input name="method" type="radio" rel="login-user-form" value="normal" id="radio_normal">
                             <label for="radio_normal">
                                 普通登录
                             </label>
                         </span>
-                        <div class="user">
-                            <span class="glyphicon glyphicon-user user1"></span>
-                            <input type="text" class="nav-text" value="" placeholder="用户名/手机号/邮箱" />
-                        </div> <br>
-                        <div class="userl">
-                            <div class="userl_le left">
-                                <span class="glyphicon glyphicon-lock user1"></span>
-                                <input type="password" class="nav-pwd" value="" placeholder="动态密码" />
+
+                        <div class="block1" style="display: block;">
+
+                            <div class="user">
+                                <span class="glyphicon glyphicon-user user1"></span>
+                                <input type="text" id="number1" class="nav-text" value="" placeholder="已注册手机号码" />
+                                <p style="display: none; color: gray">请输入11位手机号码</p>
+
+                            </div> <br>
+                            <div class="userl">
+                                <div class="userl_le left">
+                                    <span class="glyphicon glyphicon-lock user1"></span>
+                                    <input type="text" class="nav-pwd" value="" placeholder="动态密码" />
+
+                                </div>
+                                <div class="userl_rig right"><a href="#" class="btn btn-default">获取手机验证码</a></div>
                             </div>
-                            <div class="userl_rig right"><a href="#" class="btn btn-default">获取手机验证码</a></div>
+                            <div class="clearfix"></div>
+
+                            <div style="height: 15px;margin: 0;">
+                                <p id="phone_yan" style="display: none; color: gray">点击获取手机验证码</p>
+                            </div>
+                            <p class="Forget_password"> <input type="checkbox" name="" id="radio"> 
+                                <label for="radio">自动登录</label> 
+                            </p>
+
                         </div>
-                        <div class="clearfix"></div>
-                        <p class="Forget_password"> <input type="checkbox" name="" id=""> <a href="#">自动登录</a> </p>
+
+
+                        <div class="none1" style="display: none;">
+                            <div class="user">
+                                <span class="glyphicon glyphicon-user user1"></span>
+                                <input type="text" id="pu1" class="nav-text" value="" placeholder="已验证手机号/用户名/邮箱" />
+                                <p style="display: none; color: gray">请输入登录名,登录名有可能是手机号、邮箱或用户名</p>
+                            </div> <br>
+                            <div class="user">
+                                <span class="glyphicon glyphicon-lock user1"></span>
+                                <input type="password" id="pu2" class="nav-text" value="" placeholder="请输入6~12位密码" />
+                                <p style="display: none; color: gray">请输入你的密码，密码可能为数字、字母或符号的组合</p>
+                            </div> <br>
+                            <p class="Forget_password " style="margin:10px;"> 
+                                <input type="checkbox" name="" id="radio1"> 
+                                <a href="#" class="right">忘记密码</a > 
+                                <label for="radio1" >自动登录</label> </p>
+
+                        </div>
+
+
+
+
+
+
                         <input type="submit" class="nav-submit" value="登录" />
                         <div class="iconAccout">
-                            <p>你也可以使用以下帐号登录：</p>
+                            <p style="margin: 10px;">你也可以使用以下帐号登录：</p>
                             <p>
                                 <a href="" class="a1" title="QQ">QQ</a>
                                 <a href="" class="a2" title="支付宝">支付宝</a>
@@ -108,21 +148,4 @@
         </div>
     </div>
 </body>
-<script>
-   i=0;
-   $('#more').on('click',function(){
-   if(i==0){
-   $('.icon-p').slideDown( 300,function(){
-   $('#more >i').css("background-position" , "left -274px top -1px")
-   })
-   i=1;
-   }else{
-   $('.icon-p').slideUp( 300,function(){
-   $('#more >i').css("background-position" , "left -274px top -26px")
-   })
-   i=0;
-   }
-   })
-
-</script>
 </html>

@@ -25,7 +25,7 @@ text-decoration: none;
     background-position: left -1px top -64px;
 }
 .black_img p{
-   margin: 10px;
+   margin: 3px;
    background: url(../images/title/loginPic.jpg) no-repeat;
     height: 100%;
     width: 100%;
@@ -101,13 +101,17 @@ color: gray;
 }
 
 .nav-text{
+font-size: 14px;
 position: relative;
-top: -4px;
 width: 257px;
 height: 100%;
 border: none;
 outline: none;
 background: none;
+}
+.nav-pwd{
+    font-size: 16px; 
+    padding-left: 15px;
 }
 .userl_rig {
 margin-top: 10px;
