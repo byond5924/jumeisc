@@ -1,0 +1,228 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../css/font/font_1075017_php8s2md98h/iconfont.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>聚美优品</title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav container">
+        <span class="left">
+          <a href="./index.html"> <img src="../images/logo/logo_new_v1.jpg" alt="聚美优品"></a>
+        </span>
+        <div class="right tile">
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </div>
+        <div class="clearfix"></div>
+        <div class="black_img">
+          <p></p>
+          <div class="loginBord">
+            <div class="loginTit">
+              <h1><strong>用户注册</strong></h1>
+              <div class="tosignup "> 已有聚美帐号<a href="./login.html"> 立即登入</a></div>
+            </div>
+            <div class="radio_wrapper">
+              <div class="block1" style="display: block;">
+
+                <div class="user">
+                  <input type="text" id="number1" class="nav-text" value="" placeholder="手机号码" />
+                  <p style="display: none; color: gray">请输入11位手机号码</p>
+
+                </div> <br>
+                <div class="userl">
+                  <div class="userl_le left">
+
+                    <input type="text" class="nav-pwd" value="" placeholder="短信校验码" />
+
+                  </div>
+                  <div class="userl_rig right"><a href="#" class="btn btn-default">获取手机验证码</a></div>
+                </div>
+                <div class="clearfix"></div>
+                <div style="height: 15px;margin: 0;">
+                  <p id="phone_yan" style="display: none; color: gray">请输入6位手机验证码</p>
+                </div>
+
+
+                <div class="user">
+                  <input type="password" id="pu1" class="nav-text" value="" placeholder="密码" />
+                  <p style="display: none; color: gray">建议6~12位的数字、字母或字符的组合</p>
+                </div> <br>
+                <div class="user">
+                  <!-- <span class="glyphicon glyphicon-lock user1"></span> -->
+                  <input type="password" id="pu2" class="nav-text" value="" placeholder="重复密码" />
+                  <p style="display: none; color: gray">请再次输入密码</p>
+                </div> <br>
+                <input type="submit" id="btn" class="nav-submit" value="同意协议并注册" />
+                <p class="Forget_password " style="margin:10px;">
+                  <a href="#"> 《聚美隐私权政策》</a>
+                  <a>《聚美优品用户协议》</a> </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="foot">
+          <div class="footer_con" id="footer_copyright">
+            <p class="footer_copy_con">
+              Copyright © 2010-2015 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888 <br>
+              京公网安备 11010102001226 号 | <a href="" target="_blank" rel="nofollow">京ICP证111033号</a> | 食品流通许可证
+              SP1101051110165515（1-1）
+              | <a href="" target="_blank" rel="nofollow">营业执照</a>
+              | <a href="" target="_blank" rel="nofollow">公示制度</a>
+            </p>
+            <p>
+              <a href="" class="footer_copy_logo logo01" rel="nofollow"></a>
+              <a href="" target="_blank" class="footer_copy_logo logo02" rel="nofollow"></a>
+              <a href="" class="footer_copy_logo logo03" rel="nofollow"></a>
+              <a href="" class="footer_copy_logo logo04" rel="nofollow"></a>
+              <a href="" target="_blank" class="footer_copy_logo logo05" rel="nofollow"></a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  </html>
+</body>
+<script>
+
+  //密码验证提示
+ $('#pu1').click(function () {
+     $('#pu1 + p').show();
+ })
+ $('#pu1').blur(function () {
+     $('#pu1 + p').hide();
+    
+ })
+ //普通密码登录验证提示
+ $('#pu2').click(function () {
+     $('#pu2 + p').show();
+ })
+ $('#pu2').blur(function () {
+     $('#pu2 + p').hide();
+ })
+ //验证手机登录用户名提示
+  $('#number1').click(function () {
+     $('#number1 + p').show();
+ })
+//  $('#number1').blur(function () {
+//      $('#number1 + p').hide();
+//  })
+ //手机验证码提示
+ $('.nav-pwd').click(function () {
+     $('#phone_yan').show();
+ })
+ $('.nav-pwd').blur(function () {
+     $('#phone_yan').hide();
+ })
+  //判断密码是否一致 并发送请求
+  $('#btn').click(function () {
+  var pwd2 = $('#pu2').val();
+  var pwd =$('#pu1').val();
+  console.log(pwd);
+  console.log(pwd2);
+  if( pwd2 == pwd ){
+    console.log ('两个密码一致');
+   
+    var username = $('#number1').val();
+     var pwd =$('#pu1').val();
+    $.ajax({
+            type: 'get',
+            url: '../php/register.php',
+            data: {
+                "username": username,
+                "pwd": pwd
+            },
+            dataType: 'json',
+            success: function (res) {
+                console.log(res);
+                if (res.code == 200) {
+                            alert('注册成功，即将跳转登录页面');
+                            $(location).prop('href','./login.html');
+                        } else {
+                            alert("注册失败请重新注册");
+                        }
+            }
+        })
+  }else{
+    alert("密码不一致，请重新输入！")
+  }
+  })
+      
+
+/// 手机号码验证
+var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/;
+ var message = "";
+ var flag = false;
+
+ $('#number1').blur(function () {
+  var message = "";
+     var phone = $(this).val();
+     if (phone == '') {
+         message = "手机号码不能为空！";
+     } else if (phone.length != 11) {
+         message = "请输入有效的手机号码！";
+     } else if (!myreg.test(phone)) {
+         message = "请输入有效的手机号码！";
+     } else {
+         flag = true;
+         $('#number1').css("color", "green");
+         $('#number1 + p').hide();
+     }
+    $('#number1 + p').text(message).css('color','red');
+     console.log(phone);
+     console.log(message);
+     console.log(flag);
+ })
+
+
+
+
+//  $('#btn').click( function () {
+//    // alert(1);
+//                 var username = $('#number1').val();
+//                  var pwd =$('#pu1').val();
+//                 $.ajax({
+//                     type: 'get',
+//                     url: '../php/register.php',
+//                     data: {
+//                         "username": username,
+//                         "pwd": pwd
+//                     },
+//                     dataType: 'json',
+//                     success: function (res) {
+                        
+//                     }
+//                 })
+
+//             })
+// console.log(res);
+                        // //var result = JSON.parse(res);
+                        // // console.log(res);
+                        // if (res.code == 200) {
+                        //     alert('登录成功，即将跳转首页');
+                        //     $(location).prop('href','./index.html');
+                        // } else {
+                        //     alert("用户名或密码错误");
+                        // }
+</script>
+
+</html>

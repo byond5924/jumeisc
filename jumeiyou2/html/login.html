@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../css/font/font_1075017_php8s2md98h/iconfont.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
+    <title>聚美优品</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav container">
+            <span class="left">
+                <a href="./index.html"> <img src="../images/logo/logo_new_v1.jpg" alt="聚美优品"></a>
+            </span>
+            <div class="right tile">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="black_img">
+                <p></p>
+                <div class="loginBord">
+                    <div class="loginTit">
+                        <h1><strong>登录聚美</strong></h1>
+                        <div class="tosignup ">还没有聚美帐号？<a href="./register.html">30秒注册</a></div>
+                    </div>
+                    <div class="radio_wrapper">
+                        <span id="switch1">
+                            <input name="method" type="radio" rel="login-dynamic-form" value="dynamic"
+                                id="radio_dynamic">
+                            <label for="radio_dynamic">
+                                动态密码登录
+                            </label>
+                        </span>
+                        <span id="switch2">
+                            <input name="method" type="radio" rel="login-user-form" value="normal" id="radio_normal">
+                            <label for="radio_normal">
+                                普通登录
+                            </label>
+                        </span>
+
+                        <div class="block1" style="display: block;">
+
+                            <div class="user">
+                                <span class="glyphicon glyphicon-user user1"></span>
+                                <input type="text" id="number1" class="nav-text" value="" placeholder="已注册手机号码" />
+                                <p id="yanz" style="display: none; color: gray">请输入11位手机号码</p>
+
+                            </div> <br>
+                            <div class="userl">
+                                <div class="userl_le left">
+                                    <span class="glyphicon glyphicon-lock user1"></span>
+                                    <input type="text" class="nav-pwd" value="" placeholder="动态密码" />
+
+                                </div>
+                                <div class="userl_rig right"><a href="#" class="btn btn-default">获取手机验证码</a></div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                            <div style="height: 15px;margin: 0;">
+                                <p id="phone_yan" style="display: none; color: gray">点击获取手机验证码</p>
+                            </div>
+                            <p class="Forget_password"> <input type="checkbox" name="" id="radio"> 
+                                <label for="radio">自动登录</label> 
+                            </p>
+
+                        </div>
+
+
+                        <div class="none1" style="display: none;">
+                            <div class="user">
+                                <span class="glyphicon glyphicon-user user1"></span>
+                                <input type="text" id="pu1" class="nav-text" value="" placeholder="已验证手机号/用户名/邮箱" />
+                                <p style="display: none; color: gray">请输入登录名,登录名有可能是手机号、邮箱或用户名</p>
+                            </div> <br>
+                            <div class="user">
+                                <span class="glyphicon glyphicon-lock user1"></span>
+                                <input type="password" id="pu2" class="nav-text" value="" placeholder="请输入6~12位密码" />
+                                <p style="display: none; color: gray">请输入你的密码，密码可能为数字、字母或符号的组合</p>
+                            </div> <br>
+                            <p class="Forget_password " style="margin:10px;"> 
+                                <input type="checkbox" name="" id="radio1"> 
+                                <a href="#" class="right">忘记密码</a > 
+                                <label for="radio1" >自动登录</label> </p>
+
+                        </div>
+                        <input type="submit" id="btn" class="nav-submit" value="登录" />
+                        <div class="iconAccout">
+                            <p style="margin: 10px;">你也可以使用以下帐号登录：</p>
+                            <p>
+                                <a href="" class="a1" title="QQ">QQ</a>
+                                <a href="" class="a2" title="支付宝">支付宝</a>
+                                <a href="" class="a3" title="新浪微博">新浪微博</a>
+                                <a href="" class="a4" title="360">360</a>
+                                <a href="" class="a5" title="百度">百度</a>
+                                <span id="more"> 更多<i class="you"></i></span>
+                            </p>
+                            <p class="icon-p" style="display: none; margin-top: 10px;">
+                                <a href="#" class="a6" title="微信">微信</a>
+                                <a href="#" class="a7" title="人人">人人</a>
+                                <a href="#" class="a8" title="团800">团800</a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="foot">
+                <div class="footer_con" id="footer_copyright">
+                    <p class="footer_copy_con">
+                        Copyright © 2010-2015 北京创锐文化传媒有限公司 Jumei.com 保留一切权利。客服热线：400-123-8888 <br>
+                        京公网安备 11010102001226 号 | <a href="" target="_blank" rel="nofollow">京ICP证111033号</a> | 食品流通许可证
+                        SP1101051110165515（1-1）
+                        | <a href="" target="_blank" rel="nofollow">营业执照</a>
+                        | <a href="" target="_blank" rel="nofollow">公示制度</a>
+                    </p>
+                    <p>
+                        <a href="" class="footer_copy_logo logo01" rel="nofollow"></a>
+                        <a href="" target="_blank" class="footer_copy_logo logo02" rel="nofollow"></a>
+                        <a href="" class="footer_copy_logo logo03" rel="nofollow"></a>
+                        <a href="" class="footer_copy_logo logo04" rel="nofollow"></a>
+                        <a href="" target="_blank" class="footer_copy_logo logo05" rel="nofollow"></a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script>
+           //使用promise来封装ajax请求，封装一个函数，
+           //此函数要求返回一个promise对象，用于后面的.then继续调用
+        function promiseAjax(params){
+          var promise = new Promise(function(resolve,reject){
+               //执行异步任务，只要new操作，就会执行这里的异步任务
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function(){
+              if(this.readyState == 4 && this.status == 200){
+                resolve(this.responseText);
+              }
+            }
+               //ajax出错的时候触发
+            xhr.onerror = function(){
+              reject('网络出错，请稍后再试')
+            }
+            xhr.open(params.method,params.url,true);
+            xhr.send(null);
+          });
+          return promise; //返回promise对象
+        }
+        
+        document.getElementById('btn').onclick = function(){
+          var username = document.getElementById('pu1').value;
+          var pwd = document.getElementById('pu2').value;
+          console.log(pwd);
+          
+          promiseAjax({
+            "method":"get",
+            "url":"../php/login.php?username="+username+"&pwd="+pwd
+          }).then(function(res){
+            var result = JSON.parse(res);
+            console.log(result);
+            
+            if(result.code == 200){
+              alert('登录成功，我马上要跳转了');
+            }else{
+                alert("用户名或密码错误");
+             // document.getElementById('info').innerHTML = "用户名或密码失败";
+            }
+          }).catch(function(err){
+            console.log(err);
+          })
+        } 
+        
+        </script> -->
+        <script>
+            
+        </script>
+</html>

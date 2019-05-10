@@ -1,0 +1,234 @@
+body{
+    background: #fff;
+}
+a:hover{
+text-decoration: none;
+}
+.nav{
+    overflow: hidden;
+    /* height: 85px; */
+    width: 960px;
+}
+.nav .tile a{
+    display: inline-block;
+    height: 30px;
+    width: 120px;
+    background: url(../images/title/header_corn_new_v2.png);
+    margin-right: 30px;
+    margin-top: 8%;
+   
+}
+.right a:nth-child(2){
+    background-position: left -4px top -33px;
+}
+.right a:nth-child(3){
+    background-position: left -1px top -64px;
+}
+.black_img > p{
+   margin: 10px;
+   background: url(../images/title/signPic.jpg) no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.black_img{
+height: 360px;  
+width: 100%;
+
+}
+.loginBord{
+border: 1px solid #ededed;
+position: absolute;
+min-height: 400px;
+padding: 0 23px;
+width: 360px;
+top: 110px;
+right: 200px;
+}
+.loginTit{
+line-height: 60px;
+ display: flex;
+justify-content: space-between; 
+
+}
+
+.loginTit h1{
+font-family: "Microsoft YaHei","微软雅黑","黑体";
+font-weight: 400;
+font-size: 20px;
+color: #e31256;
+margin-top: 15px;
+}
+.tosignup{
+    color: gray;
+}
+.tosignup a{
+color: #e31256;
+}
+.radio_wrapper{
+line-height: 1.5;
+font-size: 12px;
+}
+.radio_wrapper > span{
+padding-right: 30px;
+}
+
+
+.user {
+   margin-top: 10px;
+border: 1px solid #d7d7d7;
+height: 45px;
+width: 100%;
+}
+.userl_le{
+width: 50%;
+height: 45px;  
+margin-top: 10px;
+border: 1px solid #d7d7d7;
+overflow: hidden;
+}
+.userl_le input{
+width: 73%;
+height: 100%;
+outline: none;
+border: none;
+
+background: none;
+}
+.user1 {
+/* display: inline-block; */
+font-size: 24px;
+width: 30px;
+margin-left: 5px;
+line-height: 35px;
+color: gray;
+}
+
+.nav-text{
+    font-size: 14px;
+position: relative;
+padding-left: 15px;
+width: 257px;
+height: 100%;
+border: none;
+outline: none;
+background: none;
+}
+.nav-pwd{
+    font-size: 16px; 
+    padding-left: 15px;
+}
+.userl_rig {
+margin-top: 10px;
+}
+.userl_rig > a{
+height: 45px;
+line-height: 35px;
+/* border-radius: none; */
+}
+
+.nav-submit{
+height: 45px;
+background:#e5406f;
+border: none;
+width: 100%;
+font-size: 18px;
+color: white;
+margin-top: 15px;
+}
+.iconAccout p > span {
+line-height: 30px;
+position: relative;
+left: -7px;
+cursor: pointer;
+float: left;
+margin-top: 5px
+}
+.block1 p {
+ margin: 5px 0;
+}
+.iconAccout p a{
+margin-right: 10px;
+text-indent: -9999px;
+background-image: url(../images/title/icon_light.jpg);
+background-repeat: no-repeat;
+display: inline-block;
+width: 43px;
+height: 53px;
+
+float: left;
+color: inherit;
+}
+
+.iconAccout span i {
+display: inline-block;
+height: 15px;
+width: 15px;
+background-image: url(../images/title/icon_light.jpg);
+background-repeat: no-repeat;
+background-position: left -274px top -26px;
+}
+
+.footer_copy_con {
+padding: 14px 0 18px;
+line-height: 23px;
+font-size:14px;
+align-content: center;
+}
+.footer_copy_con > a{
+font-size: 12px;
+align-content: center;
+
+}
+
+.foot{
+margin-top: 140px ;
+margin-bottom: 30px;
+
+}
+
+.footer_copy_logo{
+width: 126px;
+height: 50px;
+overflow: hidden;
+display: inline-block;
+margin-right: 8px;
+background: url(../images/title/header_corn_new_v2.png) no-repeat;
+}
+.logo01 {
+background-position: -1px -168px;
+}
+.logo02 {
+background-position: 0 -219px ;
+}
+.logo03 {
+background-position: 0 -270px;
+}
+.logo04 {
+background-position: 0 -321px;
+}
+.logo05 {
+background-position: 0 -372px;
+}
+#footer_copyright {
+background: #fff;
+color: #000;
+text-align: center;
+}
+
+
+.Forget_password {
+
+ display: flex;
+justify-content: space-around; 
+
+} 
+.Forget_password > a{
+    color: #e5406f;
+}
+
+
+/* 
+style=" height: 360px;  width: 100px; border: 1px solid purple; "
+
+ 
+ */
